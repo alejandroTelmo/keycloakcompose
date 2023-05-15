@@ -33,3 +33,10 @@ services:
       restart: unless-stopped
       networks:
         - local-keycloak
+networks:
+  local-keycloak:
+    driver: bridge
+
+volumes:
+  db:
+   
